@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animação de pulsar */
+@keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Classe para o efeito de pulsar */
+  .animate-pulse {
+    animation: pulsar 1.5s infinite;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; 
+  }
+  ::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #8de8bb;
+    border-radius: 10px;
+    border: 2px solid #f4f4f4;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #8de8bb #f4f4f4;
+  }
+  
